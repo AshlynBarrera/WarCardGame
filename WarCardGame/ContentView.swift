@@ -9,8 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-
+        ZStack {
+            Image("background");
+            
+            VStack {
+                Image("logo");
+                
+                HStack {
+                    Image("card5");
+                    Image("card5")
+                }
+                Button {
+                    
+                } label: {
+                    Image("dealbutton")
+                }
+                HStack {
+                    VStack {
+                        Text("Players")
+                        Text("0")
+                        
+                    }
+                    VStack {
+                        Text("CPU")
+                        Text("0")
+                        
+                    }
+                }
+            }
         }
     }
 }
