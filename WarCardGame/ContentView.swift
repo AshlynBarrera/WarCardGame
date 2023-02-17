@@ -13,29 +13,47 @@ struct ContentView: View {
             Image("background");
             
             VStack {
+                Spacer()
+                
                 Image("logo");
                 
+                Spacer()
+                
                 HStack {
-                    Image("card5");
-                    Image("card5")
-                }
-                Button {
                     
+                    Spacer()
+                    Image("card5");
+                    Spacer()
+                    Image("card5")
+                    Spacer()
+                }
+                
+                Spacer()
+
+                Button {
                 } label: {
                     Image("dealbutton")
                 }
+                
+                Spacer()
+                
                 HStack {
+                    Spacer()
+                    
                     VStack {
                         Text("Players")
                         Text("0")
-                        
                     }
+                    Spacer()
+                    
                     VStack {
                         Text("CPU")
                         Text("0")
-                        
                     }
+                    
+                    Spacer()
                 }
+                Spacer()
             }
         }
     }
