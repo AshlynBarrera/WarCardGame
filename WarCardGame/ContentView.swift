@@ -41,12 +41,31 @@ struct ContentView: View {
                 Spacer()
 
                 Button {
+                    //The following code will run each time the button is clicked
+                    
+                    //The random method generates a random whole number from one specified Int to a second specified Int (Ex: )
+                    let playerRandom =
+                    Int.random(in: 2...14)
+                    
+                    let cpuRandom =
+                    Int.random(in: 2...14)
+                    
+                    // Updates the Card image on the APP
+                    playerCard = "card" + String(playerRandom)
+                    // Updates the Card image on the APP
+                    cpuCard = "card" + String(cpuRandom)
+                    
+                    // Updating the score
+                    if (playerRandom > cpuRandom ){
+                        playerScore = playerScore + 1
+                    }else if (cpuRandom > playerRandom){
+                        cpuScore = cpuScore + 1
+                    }
+                    
                 } label: {
                     Image("dealbutton")
                 }
-                
                 Spacer()
-                
                 HStack {
                     Spacer()
                     //Styling can be added to elemenents/views by using the right panel.
